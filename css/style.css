@@ -1,142 +1,188 @@
-* {
-
-}
-
 
 :root {
-    --light-contrast: white;
-    --h2fontsize: 300%;
-    --darkborder: #000000; 
-    --darkbackgr: #000000;
-    --lightimpact: 50;
-    --linkdefault: none;
-    --aligncenter: center;
-    --section-margins: 0% 2% 0% 2%;
-    }
+  --light-contrast: white;
+  --h2fontsize: 300%;
+  --darkborder: #000000;
+  --darkbackgr: #000000;
+  --lightimpact: 50;
+  --linkdefault: none;
+  --aligncenter: center;
+  --section-margins: 0% 2% 0% 2%;
+}
 
-    .navbar {
-    padding: 3% 2% 1% 2%;  
-    background-color: var(--darkbackgr);
-    text-align: center;
-    } 
+.navbar {
+  padding: 3% 2% 1% 2%;
+  background-color: var(--darkbackgr);
+  text-align: center;
+}
 
-    h1 {    
-    justify-content: center; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: var(--lightimpact);
-    font-size: 7vw;
-    color: var(--light-contrast);
-    }
+h1 {
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: var(--lightimpact);
+  font-size: 7vw;
+  color: var(--light-contrast);
+}
 
-    .navbar p {
-    color: var(--light-contrast);
-    font-family: monospace;
-    }
+.navbar p, .jumbotron-p {
+  color: var(--light-contrast);
+  font-family: monospace;
+}
 
-    .nav-link {   
-    list-style: var(--linkdefault);
-    font-family: monospace;
-    color: var(--light-contrast) !important;
-    }   
+.nav-link {
+  list-style: var(--linkdefault);
+  font-family: monospace;
+  color: var(--light-contrast) !important;
+}
 
-    .h2-titles {
-    padding: 1.5%;
-    text-align: var(--aligncenter); 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-weight: var(--lightimpact);
-    font-size: var(--h2fontsize);   
-    }
-    
-    .fa-bars {
-    display: flex;
-    flex-direction: column;
+.h2-titles {
+  padding: 1.5%;
+  text-align: var(--aligncenter);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: var(--lightimpact);
+  font-size: var(--h2fontsize);
+}
 
-    }
-    .bg-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    }
+.fa-bars {
+  display: flex;
+  flex-direction: column;
+}
 
-    .jumbotron {
-    margin-top: 1%;
-    }
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
 
-    .jumbotron-title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: var(--lightimpact);
-    font-size: 300%;
-    }
+.jumbotron {
+  margin-top: 1%;
+}
 
-    .jumbotron-body {
-     background-color: rgba(0, 0, 0, 0.7);
-     height: 350px;
-     color: var(--light-contrast);
-    }
+.jumbotron-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: var(--lightimpact);
+  font-size: 300%;
+}
 
-    .jumbotron-button {
-    background-color: #379268;
-    border: none;
-    border-radius: 0;
-    font-family: monospace;
-    }
+.jumbotron-body {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 350px;
+  color: var(--light-contrast);
+}
 
-    .jumbotron-button:hover {
-    background-color: black;
-    }
-    .text-white h4 {
-        font-family: monospace;
-        font-weight: 40; 
-    }
+.jumbotron-button {
+  background-color: #379268;
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+}
 
-    i {
-    color: #000000;
-    font-size: 150%;
-    }
+.jumbotron-button:hover {
+  background-color: black;
+  box-shadow: 3px 3px rgb(239, 233, 233);
+}
 
-    .cardContainer {
-    border: none;
-    }
+.text-white h4 {
+  font-family: monospace;
+  font-weight: 40;
+}
 
-    .card-title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: var(--lightimpact);
-    }
+i {
+  color: #000000;
+  font-size: 150%;
+}
 
-    .card-text {
-    font-family:monospace;
-    }
+.cardContainer {
+  border: none;
+}
 
-    .portfolio-cards {
-    width: 75%;
-    }
+.card-title,
+.project-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: var(--lightimpact);
+}
 
-    .portfolio-button {
-    background-color: #000000;
-    border: none;
-    border-radius: 0;
-    font-family: monospace;
-    }
+.card-text {
+  font-family: monospace;
+}
 
-    .portfolio-button:visited {
-    background-color: black;
-    }
+.portfolio-cards {
+  width: 75%;
+}
 
-    .portfolio-button:focus {
-    background-color: #379268;
-    }    
+.portfolio-button {
+  background-color: #000000;
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+}
 
-    .portfolio-button:hover {
-    background-color: #379268;    
-    }
-    
-    .portfolio-button:active {
-    background-color: black;    
-    }
+.portfolio-button:visited {
+  background-color: black;
+}
 
-    .about-card-title {
-        text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-        
+.portfolio-button:focus {
+  background-color: #379268;
+}
+
+.portfolio-button:hover {
+  background-color: #379268;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-button:active {
+  background-color: black;
+}
+
+progress[value] {
+  --color: rgb(255, 255, 255); /* the progress color */
+  --background: rgb(54, 100, 73); /* the background color */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 300px;
+  margin: 0 10px;
+  border-radius: 10em;
+  background: var(--background);
+  display: flex;
+  align-items: start;
+}
+
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+  border: black solid 1px;
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0;
+  font-family: monospace;
+}
+
+.about-card-title {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+i:hover,
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: row;
+}
