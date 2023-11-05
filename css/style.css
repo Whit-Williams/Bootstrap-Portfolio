@@ -27,6 +27,7 @@ h1 {
 .navbar p, .jumbotron-p {
   color: var(--light-contrast);
   font-family: monospace;
+  font-size: 1.5vw;
 }
 
 .nav-link {
@@ -83,6 +84,10 @@ h1 {
   box-shadow: 3px 3px rgb(239, 233, 233);
 }
 
+.jumbo-image {
+ float: right;
+}
+
 .text-white h4 {
   font-family: monospace;
   font-weight: 40;
@@ -95,6 +100,7 @@ i {
 
 .cardContainer {
   border: none;
+  margin-bottom: 2%;
 }
 
 .card-title,
@@ -103,8 +109,12 @@ i {
   font-weight: var(--lightimpact);
 }
 
-.card-text {
+.card-text, .about-card-text {
   font-family: monospace;
+}
+
+.about-card-text {
+ text-align: center;
 }
 
 .portfolio-cards {
@@ -142,7 +152,7 @@ progress[value] {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  width: 300px;
+  width: 22vw;
   margin: 0 10px;
   border-radius: 10em;
   background: var(--background);
@@ -154,11 +164,13 @@ progress[value]::-webkit-progress-bar {
   border-radius: 10em;
   background: var(--background);
 }
+
 progress[value]::-webkit-progress-value {
   border-radius: 10em;
   background: var(--color);
   border: black solid 1px;
 }
+
 progress[value]::-moz-progress-bar {
   border-radius: 10em;
   background: var(--color);
@@ -175,6 +187,7 @@ label {
 .about-card-title {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 1rem;
 }
 
 i:hover,
