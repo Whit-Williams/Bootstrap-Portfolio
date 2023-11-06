@@ -1,4 +1,3 @@
-
 :root {
   --light-contrast: white;
   --h2fontsize: 300%;
@@ -10,6 +9,7 @@
   --section-margins: 0% 2% 0% 2%;
 }
 
+/* Navigation bar section including page title and menu */
 .navbar {
   padding: 3% 2% 1% 2%;
   background-color: var(--darkbackgr);
@@ -24,7 +24,8 @@ h1 {
   color: var(--light-contrast);
 }
 
-.navbar p, .jumbotron-p {
+.navbar p,
+.jumbotron-body p {
   color: var(--light-contrast);
   font-family: monospace;
   font-size: 1.5vw;
@@ -36,6 +37,7 @@ h1 {
   color: var(--light-contrast) !important;
 }
 
+/* Section heading declarations */
 .h2-titles {
   padding: 1.5%;
   text-align: var(--aligncenter);
@@ -44,11 +46,7 @@ h1 {
   font-size: var(--h2fontsize);
 }
 
-.fa-bars {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Jumbotron declarations including background image, mask, title, text and button */
 .bg-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -60,16 +58,23 @@ h1 {
   margin-top: 1%;
 }
 
+.jumbo-image {
+  float: right;
+}
+
 .jumbotron-title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: var(--lightimpact);
-  font-size: 300%;
 }
 
 .jumbotron-body {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 350px;
+  max-height: 350px;
   color: var(--light-contrast);
+}
+
+.jumbotron-body p {
+  font-size: 1.5vw;
 }
 
 .jumbotron-button {
@@ -84,20 +89,23 @@ h1 {
   box-shadow: 3px 3px rgb(239, 233, 233);
 }
 
-.jumbo-image {
- float: right;
-}
-
-.text-white h4 {
-  font-family: monospace;
-  font-weight: 40;
-}
-
+/* Social media/Contact icons */
 i {
   color: #000000;
   font-size: 150%;
 }
 
+i:hover,
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+.fa-bars {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Portfolio section declarations */
 .cardContainer {
   border: none;
   margin-bottom: 2%;
@@ -109,12 +117,9 @@ i {
   font-weight: var(--lightimpact);
 }
 
-.card-text, .about-card-text {
-  font-family: monospace;
-}
-
-.about-card-text {
- text-align: center;
+.project-title {
+  display: flex;
+  flex-direction: row;
 }
 
 .portfolio-cards {
@@ -143,6 +148,16 @@ i {
 
 .portfolio-button:active {
   background-color: black;
+}
+
+.card-text,
+.about-card-text {
+  font-family: monospace;
+}
+
+/* Skills section declarations for title and progress bars */
+.skills {
+  background: none;
 }
 
 progress[value] {
@@ -184,22 +199,13 @@ label {
   font-family: monospace;
 }
 
-.skills {
-    background:none;
+/* About me and contact section */
+.about-card-text {
+  text-align: center;
 }
 
 .about-card-title {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 1rem;
-}
-
-i:hover,
-.nav-link:hover {
-  opacity: 0.5;
-}
-
-.project-title {
-  display: flex;
-  flex-direction: row;
 }
