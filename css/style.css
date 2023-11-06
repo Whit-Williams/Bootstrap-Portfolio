@@ -20,21 +20,36 @@ h1 {
   justify-content: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: var(--lightimpact);
-  font-size: 7vw;
+  font-size: 450%;
   color: var(--light-contrast);
 }
 
-.navbar p,
-.jumbotron-body p {
+.navbar p {
+  font-size: 80%;
   color: var(--light-contrast);
   font-family: monospace;
-  font-size: 1.5vw;
+}
+
+.jumbotron-text {
+  color: var(--light-contrast);
+  font-family: monospace;
+  font-size: 130%;
+}
+
+.navbar-toggler-icon {
+  width: 100%;
+  background-image: none;
 }
 
 .nav-link {
   list-style: var(--linkdefault);
   font-family: monospace;
   color: var(--light-contrast) !important;
+}
+
+.navbar-toggler {
+  width: 100%;
+  background: none;
 }
 
 /* Section heading declarations */
@@ -54,12 +69,12 @@ h1 {
   border-radius: 15px;
 }
 
-.jumbotron {
-  margin-top: 1%;
-}
-
-.jumbo-image {
-  float: right;
+.jumbotron-parent {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 300px;
+  color: var(--light-contrast);
 }
 
 .jumbotron-title {
@@ -68,13 +83,11 @@ h1 {
 }
 
 .jumbotron-body {
-  background-color: rgba(0, 0, 0, 0.7);
-  max-height: 350px;
-  color: var(--light-contrast);
+  padding-left: 2%;
 }
 
-.jumbotron-body p {
-  font-size: 1.5vw;
+.jumbo-image {
+  padding-right: 4%;
 }
 
 .jumbotron-button {
@@ -98,11 +111,6 @@ i {
 i:hover,
 .nav-link:hover {
   opacity: 0.5;
-}
-
-.fa-bars {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Portfolio section declarations */
@@ -167,8 +175,8 @@ progress[value] {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  width: 22vw;
   margin: 0 10px;
+  width: 20vw;
   border-radius: 10em;
   background: var(--background);
   display: flex;
@@ -197,6 +205,9 @@ label {
   display: block;
   margin: 20px 0;
   font-family: monospace;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* About me and contact section */
@@ -208,4 +219,55 @@ label {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 1rem;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 340px) and (max-width: 575px) {
+  .jumbotron-parent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbo-image {
+    max-width: 50%;
+    max-height: 200px;
+  }
+
+  .jumbotron-body {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 11.5vw;
+  }
+
+  .navbar p {
+    font-size: 4vw;
+  }
+
+  .h2-titles {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 11.5vw;
+  }
+
+  .navbar p {
+    font-size: 3vw;
+  }
+
+  .jumbotron-body {
+    font-size: 2vw;
+  }
+
+  progress[value] {
+    width: 80%;
+  }
 }
